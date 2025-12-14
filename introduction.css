@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Caveat:wght@400..700&display=swap');
+*{
+    background-color: #FFDEDE;
+}
+
+
+
+
+#image{
+    background-color: #FFDEDE;
+    position: absolute;
+    height:500px;
+    width:500px;
+    left:800px;
+    top:200px;
+}
+#contacts{
+    transform: 3s;
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    top:-150px;
+    right:-900px
+    
+    
+}
+#contacts:hover{
+    text-decoration: underline;
+    
+    cursor: pointer;
+    transform: translateY(-4px);
+}
+h1{
+   font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight:900;
+    font-style:normal;
+    position: relative;
+    bottom:-250px;
+    font-size: 40px;
+}
+#decor {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 182, 193, 0.4);
+    border-radius: 50%;
+    top: 50px;
+    left: 100px;
+    filter: blur(40px);
+}
+#decor1{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 182, 193, 0.4);
+    border-radius: 50%;
+    top: 50px;
+    left: 500px;
+    filter: blur(40px);
+
+}
+#decor2{
+     position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 182, 193, 0.4);
+    border-radius: 50%;
+    top: 50px;
+    left: 900px;
+    filter: blur(40px);
+}
+#decor3{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 182, 193, 0.4);
+    border-radius: 50%;
+    bottom: 50px;
+    left: 100px;
+    filter: blur(40px);
+}
+#decor4{
+     position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 182, 193, 0.4);
+    border-radius: 50%;
+    bottom: 50px;
+    left: 500px;
+    filter: blur(40px);
+}
+#decor5{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 182, 193, 0.4);
+    border-radius: 50%;
+    bottom: 50px;
+    left: 900px;
+    filter: blur(40px);
+}
+
+p{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style:normal;
+    position: relative;
+    bottom: -250px;
+    font-size: 30px;
+}
+button{
+    border-radius: 20px;
+    background-color: pink;
+    color:white;
+    font-size:25px;
+    position: relative;
+    bottom: -250px;
+    transform: 3s ease;
+}
+button:hover{
+    background-color: red;
+    text-decoration: underline;
+    cursor: pointer;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgb(0,0,0,0.2);
+    
+    
+}
+.animation{
+    animation: fadeUp 3s ease forwards;
+}
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(200px);
+        transform: translateX(-200px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
