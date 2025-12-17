@@ -10,13 +10,13 @@ pageTurnBtn.forEach((el, index)=>{
             pageTurn.classList.remove('turn');
             setTimeout(()=>{
                 pageTurn.style.zIndex=20-index;
-            }, 500);
+            }, 500)
         }
         else{
             pageTurn.classList.add('turn');
             setTimeout(()=>{
                 pageTurn.style.zIndex=20+index;
-            }, 500);
+            }, 500)
         }
     }
 })
@@ -27,21 +27,23 @@ const contactMeBtn=document.querySelector('.btn.contact-me');
 contactMeBtn.onclick = () => {
     pages.forEach((page, index) => {
         setTimeout(() => {
-            page.style.zIndex = 20 + index; // FIRST
-            page.classList.add('turn');     // THEN animate
-        }, (index + 1) * 200 + 100);
-    });
-};
+         page.classList.add('turn');
+         setTimeout(()=>{
+            page.style.zindex=20 +index;
+         },500)
+    }, (index +1)*200 +100);
+    })
+}
 
 
 
 let totalPages=pages.length;
 let pageNumber=0;
 function reverseIndex(){
-    pageNumber--;
-    if(pageNumber<0){
-        pageNumber=totalPages-1;
-    }
+  pageNumber--;
+  if(pageNumber<0){
+    pageNumber=totalPages-1;
+  }
 }
 
 const backprofileButton=document.querySelector('.back-profile');
@@ -54,6 +56,7 @@ backprofileButton.onclick=()=>{
 
 
             setTimeout(()=>{
+                reverseIndex();
                 pages[pageNumber].style.zIndex=10 +index;
             },500)
         }, (index+1)*200 +100)
@@ -65,12 +68,16 @@ const pageLeft=document.querySelector('.book-page.page-left');
 setTimeout(()=>{
     coverRight.classList.add('turn');
 },2100)
+
+
 setTimeout(()=>{
     coverRight.style.zIndex=-1;
 },2800)
 setTimeout(()=>{
     pageLeft.style.zIndex=20;
 },3200)
+
+
 pages.forEach((_, index)=>{
         setTimeout(()=>{
             reverseIndex();
@@ -78,6 +85,7 @@ pages.forEach((_, index)=>{
 
 
             setTimeout(()=>{
+                reverseIndex();
                 pages[pageNumber].style.zIndex=10 +index;
             },500)
         }, (index+1)*200 +2100)
