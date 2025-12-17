@@ -29,22 +29,22 @@ body{
     color:var(--text-color);
     overflow: hidden;
 }
-@media (max-width: 768px) {
+
 .wrapper{
-    width: 90%;
-    height: 80vh;
-    padding: 1rem;
-    perspective: 150rem;
+    position: relative;
+    width: 66rem;
+    height: 45rem;
+    padding: 2rem;
     perspective: 250rem;
     animation: show-animate 2s forwards;
-}
+
     
     
 }
 
 
 @keyframes show-animate {
-
+    
     0%,30%{
         opacity: 0;
         transform: rotate(-20deg);
@@ -93,12 +93,12 @@ body{
 
 .book .book-page{
     position: absolute;
-    width: 1000%;
+    width: 50%;
     height: 100%;
     background: var(--pages-color);
     box-shadow: 0 0 .6rem rgba(0,0, 0, .1);
     display: flex;
-    padding:1rem;
+    padding:2rem;
 }
 .profile-page{
     display: flex;
@@ -110,7 +110,7 @@ body{
 
 }
 .profile-page img{
-    max-width: 120px;
+    max-width: 180px;
     border-radius: 50%;
     border: .25rem solid var(--main-color);
     margin-bottom: .8rem;
@@ -133,15 +133,15 @@ body{
     display:inline-flex;
     justify-content: center;
     text-align: center;
-    width: 7rem;
-    height: 2.5rem;
+    width: 9.5rem;
+    height: 3rem;
     background: var(--main-color);
     border: var(--border);
     border-radius: .3rem;
-    font-size:0.9rem;
+    font-size:1rem;
     color:var(--white-color);
     font-weight: 500;
-    margin:0 0.5rem;
+    margin:0 1rem;
     transition: .5s;
     
 
@@ -254,7 +254,6 @@ body{
     bottom:1.2rem;
     left:50%;
     transform: translateX(-50%);
-    font-size: 0.9rem;
 }
 
 .nextprev-btn{
@@ -315,10 +314,6 @@ body{
     color:var(--main-color);
 
 }
- .services-box,
-    .skills-box {
-        flex-direction: column;
-    }
 
 .services-content h3{
     font-size:1.1rem;
@@ -389,7 +384,7 @@ body{
 .portfolio-box .image-box{
     display: flex;
     width: 100%;
-    height: 12rem;
+    height: 15rem;
     border: var(--border);
     border-radius: .5rem;
     overflow: hidden;
@@ -478,7 +473,7 @@ body{
 
 .contact-box textarea{
     resize:none;
-    height: 10rem;
+    height: 15rem;
 
 }
 
@@ -535,5 +530,3 @@ body{
 
 
 }
-
-
